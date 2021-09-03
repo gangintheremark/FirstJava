@@ -19,7 +19,6 @@ public class test_06 {
 			else
 				System.out.print("¹Ú¼öÂ¦");
 		}
-
 		s.close();
 	}
 }

@@ -18,6 +18,7 @@ public class test_08 {
 			System.out.print("사각형이 충돌한다.");
 		} else
 			System.out.print("사각형이 충돌하지 않는다.");
+
 		s.close();
 	}
 }

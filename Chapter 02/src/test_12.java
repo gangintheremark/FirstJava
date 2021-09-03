@@ -6,7 +6,9 @@ public class test_12 {
 
 		System.out.print("¿¬»ê>>");
 		int a = s.nextInt();
+
 		String op = s.next();
+
 		int b = s.nextInt();
 		int res = 0;
 

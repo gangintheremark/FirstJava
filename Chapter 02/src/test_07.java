@@ -12,6 +12,7 @@ public class test_07 {
 			System.out.print("(" + x + "," + y + ")는 사각형 안에 있습니다.");
 		else
 			System.out.print("(" + x + "," + y + ")는 사각형 안에 없습니다.");
+
 		s.close();
 	}
 }
