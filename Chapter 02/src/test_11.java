@@ -4,18 +4,19 @@ public class test_11 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 
-		System.out.print("¥ﬁ¿ª ¿‘∑¬«œººø‰(1~12)>>");
+		System.out.print("Îã¨ÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî(1~12)>>");
 		int month = s.nextInt();
 
 		if (month == 3 || month == 4 || month == 5)
-			System.out.print("∫Ω");
+			System.out.print("Î¥Ñ");
 		else if (month == 6 || month == 7 || month == 8)
-			System.out.print("ø©∏ß");
+			System.out.print("Ïó¨Î¶Ñ");
 		else if (month == 9 || month == 10 || month == 11)
-			System.out.print("∞°¿ª");
+			System.out.print("Í∞ÄÏùÑ");
 		else
-			System.out.print("∞‹øÔ");
+			System.out.print("Í≤®Ïö∏");
 
 		s.close();
 	}
+	
 }
