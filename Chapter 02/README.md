@@ -1,10 +1,10 @@
 #### Scanner를 이용한 키 입력
 
-> - nextLine()과 next()
->   next()는 공백을 기다림
+> - nextLine()과 next() <br>
+>   next()는 공백을 기다림 <br>
 >   nextLine()은 <Enter>키의 입력을 기다림
 
-```java
+```c++
 public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 
