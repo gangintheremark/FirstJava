@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class test_07 {
     public static void main(String[] args) {
         int[] data = new int[10];
