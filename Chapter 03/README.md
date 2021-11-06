@@ -16,4 +16,21 @@ int Array[][] = new int[2][5];  // 2행 5열의 이차원 배열 생성
 
 int size1 = Array.length;  // 2차원 배열의 행의 개수, 2
 int size2 = Array[0].length; // 0번째 행에 있는 열의 개수, 5
+
+int Array[][] = { {0,0,0}, {0,0,0}, {0,0,0} }; // 3x3배열 초기화
+```
+
+> - test_07
+
+```c++
+// 1부터 10 까지 범위의 정수 랜덤 생성
+int i = (int)(Math.random()*10 + 1);
+```
+
+> - test_14
+
+```c++
+// 문자열 비교 위해 String 클래스의 equals() 메소드 이용
+if(course[i].equals(name))
+ ...
 ```
