@@ -13,7 +13,6 @@ public static void main(String[] args) {
 
 		System.out.println(str); // "안녕하세요" 출력
 		System.out.println(str2); // "안녕하세요 반갑습니다" 출력
-
 		s.close();
 }
 ```
