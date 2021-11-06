@@ -9,21 +9,10 @@ public class test_06 {
 		System.out.print("금액을 입력하시오>");
 		money = s.nextInt();
 
-		System.out.println("50000원 짜리 : " + money / unit[0] + "개");
-		System.out.println("10000원 짜리 : " + (money / unit[1] - (money / unit[0]) * 5) + "개");
-
-		money %= unit[1];
-		System.out.println("1000원 짜리 : " + money / unit[2] + "개");
-
-		money %= unit[2];
-		System.out.println("500원 짜리 : " + money / unit[3] + "개");
-		System.out.println("100원 짜리 : " + (money / unit[4] - (money / unit[3]) * 5) + "개");
-
-		money %= unit[4];
-		System.out.println("50원 짜리 : " + money / unit[5] + "개");
-		System.out.println("10원 짜리 : " + (money / unit[6] - (money / unit[5]) * 5) + "개");
-
-		System.out.println("1원 짜리 : " + money % unit[6] + "개");
+		for (int i = 0; i < unit.length; i++) {
+			System.out.printf("%d원 짜리 : %d개 \n", unit[i], money / unit[i]);
+			money = money - (money / unit[i]) * unit[i];
+		}
 		s.close();
 
 	}
