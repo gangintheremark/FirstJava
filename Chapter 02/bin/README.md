@@ -18,3 +18,5 @@ c = new CirCle[5];  //  레퍼런스 배열 생성
 for(int i=0;i<c.length;i++)  // 배열의 각 원소 객체 생성
     c[i] = new Circle(i);
 ```
+
+두 개 클래스 생성 + 객체 배열 까지 섞으니 머리 아프다..
