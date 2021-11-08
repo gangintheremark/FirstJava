@@ -42,7 +42,7 @@ class PhoneBook {
 			System.out.print("검색할 이름 >>");
 			String who = s.next();
 
-			int i = 0;
+			int i=0;
 			for (; i < phone.length; i++) {
 				if (who.equals(phone[i].getName())) {
 					System.out.println(phone[i].getName() + "의 번호는 " + phone[i].getTel() + "입니다.");
