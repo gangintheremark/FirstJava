@@ -1,9 +1,5 @@
 package example_01;
 
-/*
-(x,y)의 한 점을 표현하는 Point 클래스와 이를 상속받아 색을 가진 점을 표현하는 ColorPoint클래스 만들고 활용
- */
-
 class Point {
 	private int x, y;
 
