@@ -32,7 +32,7 @@ int i = (int)(Math.random()*10 + 1);
 > - test_14
 
 ```c++
-// 문자열 비교 위해 String 클래스의 equals() 메소드 이용
+// 문자열 비교 위해 String 클래스의 equals() 메소드 이용 ★★★
 if(course[i].equals(name))
  ...
 ```
