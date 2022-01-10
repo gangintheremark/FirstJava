@@ -1,7 +1,6 @@
 package test_01;
 
 public class TV {
-
 	private String brand;
 	private int year;
 	private int inch;
