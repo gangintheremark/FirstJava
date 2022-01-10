@@ -2,6 +2,7 @@ package test_12;
 
 import java.util.Scanner;
 
+
 class Reserve {
 	String[] tmp;
 	String name;
@@ -34,7 +35,7 @@ class Cancel {
 				tmp[i] = "---";
 				return;
 			}
-		System.out.println("ì—†ëŠ” ì‚¬ëžŒìž…ë‹ˆë‹¤.");
+		System.out.println("¾ø´Â »ç¶÷ÀÔ´Ï´Ù.");
 	}
 }
 
@@ -70,36 +71,36 @@ public class Concert {
 		Reserve r = new Reserve();
 		Cancel c = new Cancel();
 
-		System.out.println("ëª…í’ˆì½˜ì„œíŠ¸í™€ ì˜ˆì•½ ì‹œìŠ¤í…œìž…ë‹ˆë‹¤.");
+		System.out.println("¸íÇ°ÄÜ¼­Æ®È¦ ¿¹¾à ½Ã½ºÅÛÀÔ´Ï´Ù.");
 
 		while (true) {
-			System.out.print("ì˜ˆì•½:1, ì¡°íšŒ:2, ì·¨ì†Œ:3, ëë‚´ê¸°:4>>");
+			System.out.print("¿¹¾à:1, Á¶È¸:2, Ãë¼Ò:3, ³¡³»±â:4>>");
 			int num = s.nextInt();
 
 			if (num > 4 || num < 1) {
-				System.out.println("ì—†ëŠ” ë©”ë‰´ ìž…ë‹ˆë‹¤.");
+				System.out.println("¾ø´Â ¸Þ´º ÀÔ´Ï´Ù.");
 				continue;
 			}
 
 			switch (num) {
 			case 1:
-				System.out.print("ì¢Œì„êµ¬ë¶„ S(1), A(2), B(3)>>");
+				System.out.print("ÁÂ¼®±¸ºÐ S(1), A(2), B(3)>>");
 				int seat = s.nextInt();
 				if (!check_seat(seat)) {
-					System.out.println("ì—†ëŠ” ì¢Œì„ìž…ë‹ˆë‹¤.");
+					System.out.println("¾ø´Â ÁÂ¼®ÀÔ´Ï´Ù.");
 					continue;
 				}
 				if (seat == 1) {
 					System.out.print("S>>");
 					print(S);
 
-					System.out.print("ì´ë¦„>>");
+					System.out.print("ÀÌ¸§>>");
 					name = s.next();
-					System.out.print("ë²ˆí˜¸>>");
+					System.out.print("¹øÈ£>>");
 					index = s.nextInt();
 
 					if (!check_index(index)) {
-						System.out.println("ì—†ëŠ” ë²ˆí˜¸ìž…ë‹ˆë‹¤.");
+						System.out.println("¾ø´Â ¹øÈ£ÀÔ´Ï´Ù.");
 						continue;
 					}
 
@@ -110,12 +111,12 @@ public class Concert {
 					System.out.print("A>>");
 					print(A);
 
-					System.out.print("ì´ë¦„>>");
+					System.out.print("ÀÌ¸§>>");
 					name = s.next();
-					System.out.print("ë²ˆí˜¸>>");
+					System.out.print("¹øÈ£>>");
 					index = s.nextInt();
 					if (!check_index(index)) {
-						System.out.println("ì—†ëŠ” ë²ˆí˜¸ìž…ë‹ˆë‹¤.");
+						System.out.println("¾ø´Â ¹øÈ£ÀÔ´Ï´Ù.");
 						continue;
 					}
 
@@ -126,12 +127,12 @@ public class Concert {
 					System.out.print("B>>");
 					print(B);
 
-					System.out.print("ì´ë¦„>>");
+					System.out.print("ÀÌ¸§>>");
 					name = s.next();
-					System.out.print("ë²ˆí˜¸>>");
+					System.out.print("¹øÈ£>>");
 					index = s.nextInt();
 					if (!check_index(index)) {
-						System.out.println("ì—†ëŠ” ë²ˆí˜¸ìž…ë‹ˆë‹¤.");
+						System.out.println("¾ø´Â ¹øÈ£ÀÔ´Ï´Ù.");
 						continue;
 					}
 
@@ -147,14 +148,14 @@ public class Concert {
 				print(A);
 				System.out.print("B>>");
 				print(B);
-				System.out.println("<<<ì¡°íšŒë¥¼ ì™„ë£Œí•˜ì˜€ìŠµë‹ˆë‹¤.>>>");
+				System.out.println("<<<Á¶È¸¸¦ ¿Ï·áÇÏ¿´½À´Ï´Ù.>>>");
 				break;
 
 			case 3:
-				System.out.print("ì¢Œì„ S(1), A(2), B(3)>>");
+				System.out.print("ÁÂ¼® S(1), A(2), B(3)>>");
 				seat = s.nextInt();
 				if (!check_seat(seat)) {
-					System.out.println("ì—†ëŠ” ì¢Œì„ìž…ë‹ˆë‹¤.");
+					System.out.println("¾ø´Â ÁÂ¼®ÀÔ´Ï´Ù.");
 					continue;
 				}
 
@@ -162,7 +163,7 @@ public class Concert {
 					System.out.print("S>>");
 					print(S);
 
-					System.out.print("ì´ë¦„>>");
+					System.out.print("ÀÌ¸§>>");
 					name = s.next();
 
 					c.setValue(name, S);
@@ -173,7 +174,7 @@ public class Concert {
 					System.out.print("A>>");
 					print(A);
 
-					System.out.print("ì´ë¦„>>");
+					System.out.print("ÀÌ¸§>>");
 					name = s.next();
 
 					c.setValue(name, A);
@@ -184,7 +185,7 @@ public class Concert {
 					System.out.print("B>>");
 					print(B);
 
-					System.out.print("ì´ë¦„>>");
+					System.out.print("ÀÌ¸§>>");
 					name = s.next();
 
 					c.setValue(name, B);

@@ -5,8 +5,10 @@ public class Song {
 	String artist;
 	int year;
 	String country;
-	
-	public Song(){}
+
+	public Song() {
+	}
+
 	public Song(String title, String artist, int year, String country) {
 		this.title = title;
 		this.artist = artist;
@@ -15,12 +17,12 @@ public class Song {
 	}
 	
 	public void show() {
-		System.out.print(year + "년 " + country +"국적의 " + artist + "가 부른 "+ title);
+		System.out.println(year + "년 " + country +"국적의 " + artist +"가 부른 "+ title);
 	}
 	
 	public static void main(String[] args) {
-		Song mySong = new Song("Dancing Queen", "ABBA", 1978, "스웨덴");
-		
-		mySong.show();
+		Song mysong = new Song("Dancing Queen", "ABBA", 1978, "스웨덴");
+		mysong.show();
 	}
+
 }

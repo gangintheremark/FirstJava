@@ -3,6 +3,7 @@ package test_07;
 import java.util.Scanner;
 
 public class Day {
+
 	private String work;
 
 	public void set(String work) {
@@ -15,53 +16,53 @@ public class Day {
 
 	public void show() {
 		if (work == null)
-			System.out.println("ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("¾ø½À´Ï´Ù.");
 		else
-			System.out.println(work + "ìž…ë‹ˆë‹¤.");
+			System.out.println(work + "ÀÔ´Ï´Ù.");
 	}
+
 }
 
 class MonthSchedule {
-
-	private Day days[];
-	static Scanner s = new Scanner(System.in);
+	Day days[];
+	Scanner s = new Scanner(System.in);
 
 	public MonthSchedule(int day) {
 		this.days = new Day[day];
-
 		for (int i = 0; i < days.length; i++)
 			days[i] = new Day();
-
 	}
 
 	public void input() {
-		System.out.print("ë‚ ì§œ(1~30)?>>");
+		System.out.print("³¯Â¥(1~30)?");
 		int day = s.nextInt();
-		System.out.print("í• ì¼(ë¹ˆì¹¸ì—†ì´ìž…ë ¥)?");
+
+		System.out.print("ÇÒÀÏ(ºóÄ­¾øÀÌÀÔ·Â)?");
 		String work = s.next();
+
 		days[day].set(work);
 	}
 
 	public void view() {
-		System.out.print("ë‚ ì§œ(1~30)?>>");
+		System.out.print("³¯Â¥(1~30)?");
 		int day = s.nextInt();
-		System.out.print(day + "ì¼ì˜ í•  ì¼ì€ ");
+
+		System.out.print(day + "ÀÏÀÇ ÇÒ ÀÏÀº ");
 		days[day].show();
+
 	}
 
 	public void finish() {
-		System.out.println("í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
-		s.close();
+		System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
 	}
 
 	public void run() {
-		System.out.println("ì´ë²ˆë‹¬ ìŠ¤ì¼€ì¤„ ê´€ë¦¬ í”„ë¡œê·¸ëž¨.");
+		System.out.println("ÀÌ¹ø´Þ ½ºÄÉÁÙ °ü¸® ÇÁ·Î±×·¥.");
 		while (true) {
-			System.out.println();
-			System.out.print("í• ì¼(ìž…ë ¥:1, ë³´ê¸°:2, ëë‚´ê¸°:3) >>");
-			int index = s.nextInt();
+			System.out.print("ÇÒÀÏ(ÀÔ·Â:1, º¸±â:2, ³¡³»±â:3) >>");
+			int num = s.nextInt();
 
-			switch (index) {
+			switch (num) {
 			case 1:
 				input();
 				break;
@@ -72,12 +73,14 @@ class MonthSchedule {
 				finish();
 				return;
 			}
+			
+			System.out.println();
 		}
 	}
 
 	public static void main(String[] args) {
-		MonthSchedule april = new MonthSchedule(30);
-		april.run();
+		MonthSchedule april = new MonthSchedule(30); // 4¿ù´ÞÀÇ ÇÒ ÀÏ 
 
+		april.run();
 	}
 }

@@ -3,71 +3,68 @@ package test_11;
 import java.util.Scanner;
 
 class Add {
-	private int a, b;
+	int a;
+	int b;
 
 	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
-
-	int calculate() {
-		return a + b;
+	public int calculate() {
+		return a+b;
 	}
-
 }
 
 class Sub {
-	private int a, b;
+	int a;
+	int b;
 
 	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
-
-	int calculate() {
-		return a - b;
+	public int calculate() {
+		return a-b;
 	}
 }
 
 class Mul {
-	private int a, b;
+	int a;
+	int b;
 
 	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
-
-	int calculate() {
-		return a * b;
+	public int calculate() {
+		return a*b;
 	}
-
 }
 
 class Div {
-	private int a, b;
+	int a;
+	int b;
 
 	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
-
-	int calculate() {
-		return a / b;
+	public int calculate() {
+		return a/b;
 	}
 }
 
 public class Calculator {
-	static Scanner s = new Scanner(System.in);
-
 	public static void main(String[] args) {
-		System.out.print("ë‘ ì •ìˆ˜ì™€ ì—°ì‚°ìžë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>");
-
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("µÎ Á¤¼ö¿Í ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
 		int a = s.nextInt();
 		int b = s.nextInt();
 		String c = s.next();
 		int result = 0;
-
-		switch (c) {
+		
+		switch(c) {
 		case "+":
 			Add add = new Add();
 			add.setValue(a, b);
@@ -89,7 +86,7 @@ public class Calculator {
 			result = div.calculate();
 			break;
 		}
-
+		
 		System.out.println(result);
 	}
 }
