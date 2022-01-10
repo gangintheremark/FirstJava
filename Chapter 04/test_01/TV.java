@@ -13,7 +13,7 @@ public class TV {
 	}
 
 	public void show() {
-		System.out.println(brand + "에서 만든 " + year +"년형 " + inch + "인치 TV");
+		System.out.println(brand + "에서 만든 " + year + "년형 " + inch + "인치 TV");
 	}
 
 	public static void main(String[] args) {
