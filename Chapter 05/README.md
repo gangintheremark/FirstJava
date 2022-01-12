@@ -31,7 +31,10 @@ class ColorPoint extends Point {
 >
 > - 객체를 생성할 수 없고, 상속을 위한 슈퍼 클래스로만 사용
 > - 클래스의 다형성을 실현하기 위한 목적
->   `test12`
 
-Shape 클래스에서 public Shape next; 가 아닌 private Shape next; 로 선언했을 경우, <br>
+---
+
+`test12`
+
+Shape클래스에서 public Shape next; 가 아닌 private Shape next; 로 선언했을 경우, <br>
 void set(),Shape get() 함수가 추가됨
