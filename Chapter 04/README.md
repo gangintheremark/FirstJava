@@ -7,7 +7,7 @@
 > - 생성자는 new를 통해 객체를 생성할 때 한 번만 호출
 > - 생성자에 리턴 타입을 지정할 수 없음
 
-```c++
+```java
 public class book {
     String title;
     String author;
@@ -42,7 +42,7 @@ public class book {
 > - test_07
 > - test_08
 
-```c++
+```java
 Circle [] c;
 c = new CirCle[5];  //  레퍼런스 배열 생성
 
