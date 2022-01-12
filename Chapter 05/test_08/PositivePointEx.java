@@ -44,7 +44,7 @@ class PositivePoint extends Point {
 		else
 			return;
 	}
-
+	
 	public String toString() {
 		String tmp = "(" + getX() + "," + getY() + ")ÀÇ Á¡";
 		return tmp;
